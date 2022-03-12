@@ -1,21 +1,50 @@
 <div class="container py-5 vh-full">
     <div class="row align-items-center justify-content-center h-100">
         <div class="col-sm-12 col-md-4">
-            <div class="card shadow-lg bg-light">
-                <div class="card-body">
-                    <p class="card-text text-center">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                        luctus fringilla eros sed egestas. Vivamus sagittis, dolor non malesuada
-                        pellentesque, risus velit lobortis dui, gravida mollis dui felis ut lectus.
-                        Mauris non auctor risus.
-                    </p>
+            <div class="row align-items-center justify-content-center h-100">
+                <div class="col-sm-12 col-md-auto">
+                    <div class="card shadow-lg bg-light rounded-pill">
+                        <div class="card-body text-center py-5 px-4">
+                            <div *ngIf="fact; else noFact">
+                                <div class="rounded-circle bg-dark shadow-lg mx-auto mb-3"
+                                    style="height: 8rem; width: 8rem">
+                                    <img [src]="imgPath"
+                                        style="height: 100%; width: 100%;">
+                                </div>
+                                <p class="card-text">
+                                    {{ fact.fact }}
+                                </p>
+                            </div>
+        
+                            <ng-template #noFact>
+                                <div class="rounded-circle bg-dark shadow-lg mx-auto mb-3"
+                                    style="height: 8rem; width: 8rem">
+                                    <img src="assets/img/default/dead-cat.png"
+                                        style="height: 100%; width: 100%;">
+                                </div>
+                                <p class="card-text">
+                                    No data found
+                                </p>
+                            </ng-template>
+        
+                            <div class="text-center mt-3 bottom-0">
+                                <button class="btn btn-primary shadow-lg"
+                                    [disabled]="isFetching"
+                                    (click)="getData()">
+                                    <span *ngIf="isFetching; else notFetching">
+                                        <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                                        meow...
+                                    </span>
+                                    <ng-template #notFetching>
+                                        <span>
+                                            more facts!
+                                        </span>
+                                    </ng-template>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
-
-            <div class="text-center mt-3">
-                <button class="btn btn-primary">
-                    more facts!
-                </button>
             </div>
         </div>
     </div>
