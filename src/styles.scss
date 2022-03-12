@@ -1,4 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
+// Theme
+@import './assets/styles/theme/variables';
 
 // Bootstrap
-@import "~bootstrap/scss/bootstrap.scss";
+@import '~bootstrap/scss/bootstrap.scss';
+
+// Fontawesome
+@import '~@fortawesome/fontawesome-free/css/fontawesome.css';
+@import '~@fortawesome/fontawesome-free/css/regular.css';
+@import '~@fortawesome/fontawesome-free/css/solid.css';
+@import '~@fortawesome/fontawesome-free/css/brands.css';
