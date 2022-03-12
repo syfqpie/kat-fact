@@ -9,7 +9,9 @@ const routes: Routes = [
     path: '',
     component: PublicLayoutComponent,
     loadChildren: () => import('./core/public/public.module').then(m => m.PublicModule)
-  }
+  },
+  // Not found
+  { path: '**', redirectTo: '/not-found' }
 ];
 
 @NgModule({

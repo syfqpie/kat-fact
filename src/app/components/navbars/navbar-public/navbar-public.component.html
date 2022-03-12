@@ -1,41 +1,19 @@
 <nav class="navbar navbar-expand-lg bg-dark border-bottom border-dark navbar-dark border-3 px-3">
 	<div class="container">
         <a class="navbar-brand" href="#">
-          <img src="/assets/img/default/laughing-cat.png" style="height: 3rem; width: auto">
+          <img src="/assets/img/default/cool-cat.png" style="height: 3rem; width: auto">
           katFact
         </a>
 
-        <button 
-			class="navbar-toggler" 
-			type="button" 
-			data-bs-toggle="collapse" 
-			data-bs-target="#navbarSupportedContent"
-			aria-controls="navbarSupportedContent" 
-			aria-expanded="false" 
-			aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-
-		<div class="collapse navbar-collapse" id="navbarSupportedContent">
-			<ul class="navbar-nav mb-0 mb-lg-0 ms-auto">
-				<li class="nav-item">
-					<!-- <a class="nav-link active" aria-current="page" href="#">Home</a> -->
-					<a 
-						class="nav-link m-0 cursor-pointer" 
-						[routerLink]="'/home'"
-						[routerLinkActive]="['active']">
-						Home
-					</a>
-				</li>
-				<li class="nav-item">
-					<a 
-						class="nav-link m-0 cursor-pointer" 
-						[routerLink]="'/about'"
-						[routerLinkActive]="['active']">
-						About
-					</a>
-				</li>
-			</ul>
-		</div>
+        <ul class="navbar-nav mb-0 mb-lg-0 ms-auto">
+			<li class="nav-item">
+				<a 
+					class="nav-link m-0 cursor-pointer" 
+					[routerLink]="'/about'"
+					[routerLinkActive]="['active']">
+					<i class="fa-solid fa-circle-info text-muted"></i>
+				</a>
+			</li>
+		</ul>
     </div>
 </nav>
