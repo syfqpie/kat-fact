@@ -2,7 +2,11 @@
 
 A random app generating random fun facts about cat by consuming facts from https://catfact.ninja/.
 
-##### Setup
+## Preview
+
+![Preview](https://raw.githubusercontent.com/syfqpie/kat-fact/Configuration-Setup/src/assets/img/preview/kat-fact-preview.png)
+
+## Setup
 `You can use either npm or yarn`
 ```bash
 cd web
