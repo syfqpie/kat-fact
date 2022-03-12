@@ -1,3 +1,8 @@
+
 .min-vh-full {
-    min-height: calc(100vh - 8.4rem);
+    min-height: $full-page-height;
+}
+
+.vh-full {
+    height: $full-page-height;
 }
