@@ -41,4 +41,5 @@ ng build --prod
 
 - [Bootstrap](https://github.com/twbs/bootstrap)
 - [Font Awesome](https://github.com/FortAwesome/Font-Awesome)
-- [Cats Emoticon Icon Pack](https://www.flaticon.com/packs/cat-emoticons)
+- [Cat Emoticons Icon Pack](https://www.flaticon.com/packs/cat-emoticons)
+- [Cat Facts](https://catfact.ninja/)
