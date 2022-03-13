@@ -1,10 +1,14 @@
-# katFact
-
-A random app generating random fun facts about cat by consuming facts from https://catfact.ninja/.
+<div align="center">
+    <h2>katFact</h2>
+    <br />
+    A random app generating random fun facts about cat by consuming facts from https://catfact.ninja/.
+    <br /><br />
+</div>
 
 ## Preview
 
-![Preview](https://raw.githubusercontent.com/syfqpie/kat-fact/Configuration-Setup/src/assets/img/preview/kat-fact-preview.png)
+![Preview](https://raw.githubusercontent.com/syfqpie/kat-fact/master/src/assets/img/preview/kat-fact-preview.png)
+- https://kat-fact.herokuapp.com/
 
 ## Setup
 `You can use either npm or yarn`
@@ -32,3 +36,9 @@ ng g s <path/to/file>
 ```bash
 ng build --prod
 ```
+
+### Credits
+
+- [Bootstrap](https://github.com/twbs/bootstrap)
+- [Font Awesome](https://github.com/FortAwesome/Font-Awesome)
+- [Cats Emoticon Icon Pack](https://www.flaticon.com/packs/cat-emoticons)
