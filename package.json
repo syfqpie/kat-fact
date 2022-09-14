@@ -1,6 +1,6 @@
 {
   "name": "kat-fact",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "A random app generating random fun facts about cat",
   "keywords": [
     "angular",
