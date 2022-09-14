@@ -8,7 +8,7 @@
 ## Preview
 
 ![Preview](https://raw.githubusercontent.com/syfqpie/kat-fact/master/src/assets/img/preview/kat-fact-preview.png)
-- https://kat-fact.herokuapp.com/
+- https://kat-fact.vercel.app/
 
 ## Setup
 `You can use either npm or yarn`
@@ -42,4 +42,5 @@ ng build --prod
 - [Bootstrap](https://github.com/twbs/bootstrap)
 - [Font Awesome](https://github.com/FortAwesome/Font-Awesome)
 - [Cat Emoticons Icon Pack](https://www.flaticon.com/packs/cat-emoticons)
-- [Cat Facts](https://catfact.ninja/)
+- [Cat Facts](https://catfact.ninja)
+- [Vercel](https://vercel.com)
