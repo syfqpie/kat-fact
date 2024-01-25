@@ -3,11 +3,15 @@ import { Component } from '@angular/core';
 @Component({
 	selector: 'app-public',
 	template: `
-		<div class="bg-zinc-900 h-screen w-screen">
-			<router-outlet></router-outlet>
+		<div class="h-screen w-screen px-20 flex flex-col bg-zinc-900 text-white">
+			<app-header></app-header>
+			<div class="flex-grow">
+				<router-outlet></router-outlet>
+			</div>
+			<app-footer></app-footer>
 		</div>
 	`,
-	styleUrls: ['./public.component.css']
+	styles: []
 })
 export class PublicComponent {
 
