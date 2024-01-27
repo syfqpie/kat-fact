@@ -9,7 +9,7 @@ const DEFAULT_ICON = 'assets/img/default/dead-cat.png'
 @Component({
 	selector: 'app-fact',
 	template: `
-	<div class="mt-40 md:mt-20 w-72  md:w-96 p-4 border rounded-lg
+	<div class="mt-40 md:mt-20 w-72 md:w-96 p-4 border rounded-lg
 		shadow sm:p-6 bg-zinc-800 border-zinc-700/20 transition-all">
 		<div class="flex items-center justify-center
 			text-center text-white w-full">
@@ -35,11 +35,11 @@ const DEFAULT_ICON = 'assets/img/default/dead-cat.png'
 				</h5>
 
 				<button class="py-1 px-3 text-sm rounded-lg
-						enabled:bg-amber-600/30 enabled:text-amber-600 font-semibold
-						focus:ring focus:ring-amber-600/20 disabled:bg-amber-600/10
-						disabled:text-amber-600/50"
-						[disabled]="isLoading"
-						(click)="getData()">
+					enabled:bg-amber-600/30 enabled:text-amber-600 font-semibold
+					focus:ring focus:ring-amber-600/20 disabled:bg-amber-600/10
+					disabled:text-amber-600/50"
+					[disabled]="isLoading"
+					(click)="getData()">
 					<i class="ri-loop-right-fill inline-block"
 						[ngClass]="{ 'animate-spin': isLoading }">
 					</i>
@@ -76,7 +76,9 @@ export class FactComponent implements OnInit, OnDestroy {
 			)
 		)
 
-		this.getData()
+		if (!this.fact) {
+			this.getData()
+		}
 	}
 
 	ngOnDestroy(): void {
