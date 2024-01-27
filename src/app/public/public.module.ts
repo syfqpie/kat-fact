@@ -7,6 +7,7 @@ import { PublicComponent } from './public.component';
 import { HomeComponent } from './pages/home/home.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
+import { FactComponent } from './components/fact/fact.component';
 
 @NgModule({
 	declarations: [
@@ -14,6 +15,7 @@ import { HeaderComponent } from './components/header/header.component';
 		PublicComponent,
 		FooterComponent,
 		HeaderComponent,
+		FactComponent,
 	],
 	imports: [
 		CommonModule,
