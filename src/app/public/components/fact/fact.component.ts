@@ -2,6 +2,7 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
 
 import { CatFact } from '../../services/api.model';
+import { ApiService } from '../../services/api.service';
 
 const DEFAULT_ICON = 'assets/img/default/dead-cat.png'
 
@@ -66,7 +67,15 @@ export class FactComponent implements OnInit, OnDestroy {
 
 	subscription: Subscription = new Subscription
 
+	constructor(private apiSvc: ApiService) {}
+
 	ngOnInit(): void {
+		this.subscription.add(
+			this.apiSvc.fact.subscribe(
+				(fact) => { this.fact = fact }
+			)
+		)
+
 		this.getData()
 	}
 
@@ -75,9 +84,18 @@ export class FactComponent implements OnInit, OnDestroy {
 	}
 
 	public getData() {
-		// get data
 		this.isLoading = true
-		this.imgPath = this.getImagePath()
+		this.subscription.add(
+			this.apiSvc.getRandomFact().subscribe({
+				next: () => {
+					this.isLoading = false
+					this.imgPath = this.getImagePath()
+				},
+				error: () => {
+					this.isLoading = false
+				},
+			})
+		)
 	}
 
 	private getImagePath() {
