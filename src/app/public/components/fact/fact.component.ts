@@ -3,8 +3,7 @@ import { Subscription } from 'rxjs';
 
 import { CatFact } from '../../services/api.model';
 import { ApiService } from '../../services/api.service';
-
-const DEFAULT_ICON = 'assets/img/default/dead-cat.png'
+import { NO_DATA_CAT } from '../../public.constant';
 
 @Component({
 	selector: 'app-fact',
@@ -62,7 +61,7 @@ const DEFAULT_ICON = 'assets/img/default/dead-cat.png'
 })
 export class FactComponent implements OnInit, OnDestroy {
 	fact: CatFact | null = null
-	imgPath = DEFAULT_ICON
+	imgPath = NO_DATA_CAT
 	isLoading = false
 
 	subscription: Subscription = new Subscription
@@ -102,6 +101,6 @@ export class FactComponent implements OnInit, OnDestroy {
 
 	private getImagePath() {
 		const randomId = Math.floor(Math.random() * (45 - 1) + 1)
-        return String(`assets/img/cat-emoticons/${ randomId }.png`)
+        return String(`assets/img/default/${ randomId }.png`)
 	}
 }

@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { COOL_CAT } from '../../public.constant';
 
 @Component({
   selector: 'app-header',
@@ -7,8 +8,8 @@ import { Component } from '@angular/core';
 		<a href="#" class="font-semibold hover:text-amber-600">
 			<img
 				alt="logo"
-				src="/assets/img/default/cool-cat.png"
-				class="inline-block h-12 w-12" />
+				class="inline-block h-12 w-12"
+				[src]="logoPath" />
 			katFact
 		</a>
 
@@ -20,7 +21,7 @@ import { Component } from '@angular/core';
 					focus:ring focus:ring-amber-600/20"
 					[routerLink]="['/about']"
 					[routerLinkActive]="['active']">
-					<i class="ri-terminal-fill"></i>
+					<i class="ri-code-block"></i>
 			</button>
 			</li>
 		</ul>
@@ -29,5 +30,5 @@ import { Component } from '@angular/core';
   styles: []
 })
 export class HeaderComponent {
-
+	public logoPath = COOL_CAT
 }

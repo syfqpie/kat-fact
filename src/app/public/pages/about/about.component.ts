@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { COOL_CAT } from '../../public.constant';
 
 @Component({
 	selector: 'app-about',
@@ -12,9 +13,9 @@ import { Component } from '@angular/core';
 					<div class="-mt-[6rem] p-2
 						rounded-full w-44 mx-auto border-t-2
 						border-t-amber-700/20">
-						<img src="assets/img/default/cool-cat.png"
-							alt="cat-icons"
-							class="w-40 h-40" />
+						<img alt="cat-icons"
+							class="w-40 h-40"
+							[src]="logoPath" />
 					</div>
 
 					<h5 class="text-xl font-normal text-zinc-100 w-full">
@@ -28,7 +29,8 @@ import { Component } from '@angular/core';
 					<button class="py-1 px-3 text-sm rounded-lg
 						enabled:bg-amber-600/30 enabled:text-amber-600 font-semibold
 						focus:ring focus:ring-amber-600/20 disabled:bg-amber-600/10
-						disabled:text-amber-600/50">
+						disabled:text-amber-600/50"
+						[routerLink]="['/']">
 						<i class="ri-home-6-line inline-block"></i>
 
 						<span>
@@ -42,4 +44,6 @@ import { Component } from '@angular/core';
 	`,
 	styleUrls: ['./about.component.css']
 })
-export class AboutComponent { }
+export class AboutComponent {
+	public logoPath = COOL_CAT
+}
