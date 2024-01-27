@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+
+import { environment } from 'src/environments/environment';
 import { COOL_CAT } from '../../public.constant';
 
 @Component({
@@ -23,7 +25,7 @@ import { COOL_CAT } from '../../public.constant';
 					</h5>
 
 					<p class="text-zinc-100/80 mb-3">
-						version 1.1.0
+						{{ appVersion }}
 					</p>
 
 					<button class="py-1 px-3 text-sm rounded-lg
@@ -46,4 +48,5 @@ import { COOL_CAT } from '../../public.constant';
 })
 export class AboutComponent {
 	public logoPath = COOL_CAT
+	public appVersion = environment.appVersion
 }
