@@ -11,35 +11,34 @@
 - https://kat-fact.vercel.app/
 
 ## Setup
-`You can use either npm or yarn`
+`Install dependencies`
 ```bash
-cd web
-npm install / yarn install
-ng serve --o
+$ yarn install
+$ ng serve --o
 ```
 
 ### How to get start?
 ##### To create components
 `Make sure you're in the angular project root`
 ```bash
-ng g c <path/to/file>
+$ ng g c <path/to/file>
 ```
 
 ##### To create services
 `Make sure you're in the angular project root`
 ```bash
-ng g s <path/to/file>
+$ ng g s <path/to/file>
 ```
 
 ##### To build for production
 `Make sure you're in the angular project root`
 ```bash
-ng build --prod
+$ ng build --aot
 ```
 
 ### Credits
 
-- [Bootstrap](https://github.com/twbs/bootstrap)
+- [Tailwind](https://tailwindcss.com)
 - [Font Awesome](https://github.com/FortAwesome/Font-Awesome)
 - [Cat Emoticons Icon Pack](https://www.flaticon.com/packs/cat-emoticons)
 - [Cat Facts](https://catfact.ninja)
