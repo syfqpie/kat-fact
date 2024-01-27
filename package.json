@@ -1,6 +1,14 @@
 {
   "name": "kat-fact",
   "version": "2.0.0",
+  "description": "A random app generating random fun facts about cat",
+  "keywords": [
+    "angular",
+    "cat",
+    "fact"
+  ],
+  "homepage": "https://github.com/syfqpie/kat-fact",
+  "repository": "https://github.com/syfqpie/kat-fact",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
