@@ -8,6 +8,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FactComponent } from './components/fact/fact.component';
+import { AboutComponent } from './pages/about/about.component';
 
 @NgModule({
 	declarations: [
@@ -16,6 +17,7 @@ import { FactComponent } from './components/fact/fact.component';
 		FooterComponent,
 		HeaderComponent,
 		FactComponent,
+		AboutComponent,
 	],
 	imports: [
 		CommonModule,
